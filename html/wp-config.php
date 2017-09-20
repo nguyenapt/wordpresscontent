@@ -22,16 +22,16 @@
 define('MYSQL_SSL_CA', '/etc/ssl/certs/Baltimore_CyberTrust_Root.pem');
 
 /** The name of the database for WordPress */
-define('DB_NAME', getenv('WORDPRESS_DB_NAME'));
+define('DB_NAME', 'wordpress');
 
 /** MySQL database username */
-define('DB_USER', getenv('WORDPRESS_DB_USER'));
+define('DB_USER', 'wordpress@addn-mysql');
 
 /** MySQL database password */
-define('DB_PASSWORD', getenv('WORDPRESS_DB_PASSWORD'));
+define('DB_PASSWORD', 'c8ehEsE7acakuTha');
 
 /** MySQL hostname */
-define('DB_HOST', getenv('WORDPRESS_DB_HOST'));
+define('DB_HOST', 'addn-mysql.mysql.database.azure.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -80,6 +80,7 @@ $table_prefix  = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
+define('WP_ALLOW_REPAIR', true);
 
 // If we're behind a proxy server and using HTTPS, we need to alert Wordpress of that fact
 // see also http://codex.wordpress.org/Administration_Over_SSL#Using_a_Reverse_Proxy
