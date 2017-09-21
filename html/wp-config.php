@@ -19,7 +19,7 @@
  */
 
 /** enable SSL to Azure MySQL */
-define('MYSQL_SSL_CA', '/etc/ssl/certs/Baltimore_CyberTrust_Root.pem');
+/**define('MYSQL_SSL_CA', '/etc/ssl/certs/Baltimore_CyberTrust_Root.pem');*/
 
 /** The name of the database for WordPress */
 define('DB_NAME', 'wordpress');
