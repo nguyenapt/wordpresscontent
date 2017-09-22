@@ -1543,7 +1543,8 @@ class wpdb {
 			if ( WP_DEBUG ) {
 				mysqli_real_connect( $this->dbh, $host, $this->dbuser, $this->dbpassword, null, $port, $socket, $client_flags );
 			} else {
-				@mysqli_real_connect( $this->dbh, $host, $this->dbuser, $this->dbpassword, null, $port, $socket, $client_flags );
+				//@mysqli_real_connect( $this->dbh, $host, $this->dbuser, $this->dbpassword, null, $port, $socket, $client_flags );
+				@mysqli_real_connect($this->dbh, "addcloud-addn-mysql.mysql.database.azure.com", "wordpress@addcloud-addn-mysql", "Niteco2017.", "wordpress", 3306);
 			}
 
 			if ( $this->dbh->connect_errno ) {
